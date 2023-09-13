@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name="multipledispatch",
-    version="1.0.1",
+    version="1.0.2",
     description="Multiple dispatch",
     url="https://github.com/ImahnShekhzadeh/multipledispatch",
     author="Imahn Shekhzadeh",
