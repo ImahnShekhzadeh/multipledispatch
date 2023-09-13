@@ -6,4 +6,4 @@ from .dispatcher import (
     MDNotImplementedError,
 )
 
-__version__ = "0.6.0"
+__version__ = "1.0.1"
