@@ -6,11 +6,11 @@ from setuptools import setup
 
 setup(
     name="multipledispatch",
-    version="1.0.0",
+    version="1.0.1",
     description="Multiple dispatch",
-    url="http://github.com/mrocklin/multipledispatch/",
-    author="Matthew Rocklin",
-    author_email="mrocklin@gmail.com",
+    url="https://github.com/ImahnShekhzadeh/multipledispatch",
+    author="Imahn Shekhzadeh",
+    author_email="imahn.shekhzadeh@hesge.ch",
     license="BSD",
     keywords="dispatch",
     packages=["multipledispatch"],
