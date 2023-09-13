@@ -264,7 +264,14 @@ class Dispatcher(object):
         return od
 
     def __call__(self, *args, **kwargs):
-        types = tuple([type(arg) for arg in args])
+        # As documented here (https://github.com/mrocklin/multipledispatch/issues/126), 
+        # the `__call__()` function of dispatch needs to be slight adapted, 
+        # do this by extending `types`: 
+        # https://stackoverflow.com/questions/1380860/add-variables-to-tuple
+        types_args = tuple([type(arg) for arg in args])
+        types = (
+            types_args + tuple(list(type(kwarg) for kwarg in kwargs.values()))
+        )
         try:
             func = self._cache[types]
         except KeyError:
